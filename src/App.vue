@@ -1,0 +1,36 @@
+<template>
+   <div >
+    <cld-video cloudName="picturecloud7" publicId="autoupload-test/video/sledding">
+    </cld-video>
+  </div>
+</template>
+
+<script>
+
+export default {
+  name: "App",
+  components: {
+   
+  }
+};
+</script>
+
+<style>
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 80vh;
+}
+.vue-logo {
+  width: 50px;
+  height: auto;
+}
+</style>
