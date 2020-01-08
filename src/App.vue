@@ -1,16 +1,24 @@
 <template>
-   <div >
-    <cld-video cloudName="picturecloud7" publicId="autoupload-test/video/sledding">
-    </cld-video>
+  <div>
+    <!-- <cld-video cloudName="picturecloud7" publicId="autoupload-test/video/sledding">
+    </cld-video> -->
+    <video id="demo-player" controls autoplay class="cld-video-player"></video>
   </div>
 </template>
 
 <script>
-
 export default {
   name: "App",
-  components: {
-   
+  components: {},
+  mounted: function() {
+    console.log("mounted");
+    window.addEventListener("load", function(event) {
+      var cld = cloudinary.Cloudinary.new({
+        cloud_name: "demo"
+      });
+      var demoplayer = cld.videoPlayer("demo  -player").width(600);
+      demoplayer.source("race_road_car");
+    });
   }
 };
 </script>
