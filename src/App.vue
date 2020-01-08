@@ -16,7 +16,7 @@ export default {
       var cld = cloudinary.Cloudinary.new({
         cloud_name: "demo"
       });
-      var demoplayer = cld.videoPlayer("demo  -player").width(600);
+      var demoplayer = cld.videoPlayer("demo-player").width(600);
       demoplayer.source("race_road_car");
     });
   }
