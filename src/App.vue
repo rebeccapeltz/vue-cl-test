@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <cld-video cloudName="picturecloud7" publicId="autoupload-test/video/sledding">
+    <!-- <cld-video cloudName="demo" publicId="race_rode_car">
     </cld-video> -->
     <video id="demo-player" controls autoplay class="cld-video-player"></video>
   </div>
