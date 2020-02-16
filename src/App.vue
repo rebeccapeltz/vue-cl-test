@@ -12,7 +12,9 @@ export default {
   components: {},
   mounted: function() {
     console.log("mounted");
-    window.addEventListener("load", function(event) {
+    window.addEventListener("load", function() {
+      /*global cloudinary*/
+      /*eslint no-undef: "error"*/
       var cld = cloudinary.Cloudinary.new({
         cloud_name: "demo"
       });
